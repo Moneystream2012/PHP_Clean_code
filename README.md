@@ -38,16 +38,38 @@
      * [Prefer composition over inheritance](#prefer-composition-over-inheritance)
      * [Avoid fluent interfaces](#avoid-fluent-interfaces)
      * [Prefer `final` classes](#prefer-final-classes)
-  7. [SOLID](#solid)
-     * [Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
-     * [Open/Closed Principle (OCP)](#openclosed-principle-ocp)
-     * [Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
-     * [Interface Segregation Principle (ISP)](#interface-segregation-principle-isp)
-     * [Dependency Inversion Principle (DIP)](#dependency-inversion-principle-dip)
-  8. [Don’t repeat yourself (DRY)](#dont-repeat-yourself-dry)
-  9. [Translations](#translations)
+  7. [Don’t repeat yourself (DRY)](#dont-repeat-yourself-dry)
 
-## Introduction
+
+## MAIN PRINCIPLES
+
+Good PHP code should be structured. 
+Long chunks of code can be broken up into functions or methods that achieve sub-tasks with simple code, 
+while non-obvious snippets should be commented to make their meaning plain. 
+As much as possible, you should separate frontend HTML/CSS/JavaScript code from the server-side logic of your applications. 
+PHP’s object oriented programming features give you some especially powerful tools to break up your applications into sensible units.
+
+Good PHP code should be consistent. 
+Whether that means setting rules for the names of variables and functions, 
+adopting standard approaches to recurring tasks like database access and error handling, 
+or simply making sure all of your code is indented the same way, 
+consistency makes your code easier for others to read.
+
+Good PHP code should be portable. 
+PHP has a number of features, such as magic quotes and short tags, 
+that can break fragile code when they are switched on or off. 
+If you know what you’re doing, however, you can write code that works by adapting to its environment.
+
+Good PHP code should be secure. 
+While PHP offers excellent performance and flexibility out of the box, 
+it leaves important issues like security entirely in the hands of the developer. 
+A deep understanding of potential security holes like Cross-Site Scripting (XSS), 
+Cross-Site Request Forgeries (CSRF), code injection vulnerabilities, 
+and character encoding loopholes is essential for a professional PHP developer these days.
+
+
+
+## CODE STYLE
 
 Software engineering principles, from Robert C. Martin's book
 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882),
